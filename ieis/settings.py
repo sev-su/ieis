@@ -50,6 +50,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'south',
+    'compressor',
     'gunicorn',
     'django_nose',
     'django.contrib.admin',
@@ -98,6 +99,15 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
+
+COMPRESS_ENABLED = True
+COMPRESS_ROOT = 'static/'
+STATIC_DEPS = True
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'compressor.finders.CompressorFinder',
+)
 
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static_apps/'  # path for ./manage.py collectstatic
