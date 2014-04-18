@@ -44,13 +44,15 @@ INSTALLED_APPS = (
     # django apps
     'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.sites',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    # additional apps
-    'compressor',
+    'south',
+    'gunicorn',
+    'django_nose',
+    'django.contrib.admin',
 
     # ieis apps
     'frontpage',
@@ -85,7 +87,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'ru-RU'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
 
 USE_I18N = True
 
@@ -103,3 +105,5 @@ STATIC_ROOT = 'static_apps/'  # path for ./manage.py collectstatic
 STATICFILES_DIRS = (
     join(BASE_DIR, 'static'),
 )
+
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
