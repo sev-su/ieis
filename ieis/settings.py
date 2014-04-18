@@ -10,7 +10,15 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+from os.path import join
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+
+
+if __name__ in ['settings', 'ieis.settings']:
+    import sys
+
+    sys.path.insert(0, join(BASE_DIR, 'ieis'))
 
 
 # Quick-start development settings - unsuitable for production
@@ -26,16 +34,26 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+TEMPLATE_DIRS = (
+    join(BASE_DIR, 'templates'),
+)
 
 # Application definition
 
 INSTALLED_APPS = (
+    # django apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # additional apps
+    'compressor',
+
+    # ieis apps
+    'frontpage',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -65,7 +83,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-RU'
 
 TIME_ZONE = 'UTC'
 
@@ -80,3 +98,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = 'static_apps/'  # path for ./manage.py collectstatic
+
+STATICFILES_DIRS = (
+    join(BASE_DIR, 'static'),
+)

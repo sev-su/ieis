@@ -1,5 +1,7 @@
 /venv/
 /build/
+/static/CACHE/
+/static_apps/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
