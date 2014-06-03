@@ -1161,12 +1161,14 @@
 	{
 		position: relative;
 		margin: 0;
-		background: url('../images/header.jpg');
+		/*background: url('../images/header.jpg');*/
+		background: url('../images/snunei-main.jpg');
 		background-size: cover;
 		background-position: center center;
 		padding: 14em 0 14em 0;
 		text-align: center;
 		color: #fff;
+		text-shadow: 1px 1px 3px black;
 	}
 	
 		#header:after
