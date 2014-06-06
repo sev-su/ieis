@@ -1169,7 +1169,7 @@
 		text-align: center;
 		color: #fff;
 		text-shadow: 2px 2px 3px black;
-		height: 100vh;
+		min-height: 100vh;
 	}
 	
 		#header:after
