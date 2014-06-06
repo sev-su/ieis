@@ -19,17 +19,17 @@
 
 	body,input,textarea,select
 	{
-		font-family: 'Roboto', sans-serif;
+		font-family: sans-serif;
 		font-weight: 300;
 		font-size: 17pt;
 		line-height: 1.75em;
-		color: #888;
+		/*color: #888;*/
 		-webkit-text-stroke: 0.1px;
 	}
 
 	h1,h2,h3,h4,h5,h6
 	{
-		color: #666;
+		color: #;
 		margin: 0 0 1em 0;
 		font-weight: 100;
 		line-height: 1.5em;
@@ -1165,10 +1165,10 @@
 		background: url('../images/snunei-main.jpg');
 		background-size: cover;
 		background-position: center center;
-		padding: 14em 0 14em 0;
+		padding: 10em 0 10em 0;
 		text-align: center;
 		color: #fff;
-		text-shadow: 1px 1px 3px black;
+		text-shadow: 2px 2px 3px black;
 	}
 	
 		#header:after
@@ -1307,7 +1307,7 @@
 		position: relative;
 		margin: 0;
 		text-align: center;
-		padding: 4em 0 8em 0;
+		padding: 1em 0 1em 0;
 		box-shadow: inset 0 1px 0 0 #e6e6e6;
 	}
 	
