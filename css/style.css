@@ -15,6 +15,7 @@
 	body
 	{
 		background: #F8F8F8;
+		min-width: 340px;
 	}
 
 	body,input,textarea,select
@@ -1162,15 +1163,19 @@
 		position: relative;
 		margin: 0;
 		/*background: url('../images/header.jpg');*/
-		background: url('../images/snunei-main.jpg');
+		background: url('../images/snunei/snunei-main_1920.png') no-repeat;
 		background-size: cover;
 		background-position: center center;
-		padding: 10em 0 10em 0;
+		padding: 10em 1em 10em 1em;
 		text-align: center;
 		color: #fff;
 		text-shadow: 2px 2px 3px black;
 		min-height: 100vh;
 	}
+	#title_br{
+		line-height: 200%;
+	}
+	
 	
 		#header:after
 		{
@@ -1336,3 +1341,39 @@
 				{
 					box-shadow: inset 0 0 0 1px #d6d6d6;
 				}
+
+@media (min-width: 801px) and (max-width: 1366px){
+  #header {
+    background: url('../images/snunei/snunei-main_1366.png') no-repeat;
+	paddding: 4em 0 4em 0;
+  }
+  #title_br{
+		line-height: 100%;
+	}
+}
+@media (max-width: 800px) and (min-width: 641px){
+  #header {
+    background: url('../images/snunei/snunei-main_800.png')  no-repeat;
+	padding-top: 4em;
+	padding-bottom: 2em;
+	min-height: 533px;
+  }
+  #gallery embed{
+	width:640px;
+	height: 480px;
+  }
+}
+@media (max-width: 640px){
+  #header {
+    background: url('../images/snunei/snunei-main_640.png') no-repeat;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	min-height: 427px;
+  }
+  #header header h1{
+	font-size: 1.5em;
+  }
+  #gallery embed{
+	display: none;
+  }
+}
