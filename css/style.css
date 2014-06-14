@@ -282,12 +282,12 @@
 			ul.default li
 			{
 				padding-left: 0.5em;
-			}		
+			}       
 
 		ul.icons
 		{
 			cursor: default;
-		}	
+		}   
 		
 			ul.icons li
 			{
@@ -420,7 +420,7 @@
 					{
 						text-indent: 0.01px;
 						text-overflow: '';
-   					}
+					}
 				
 					form .select:before
 					{
@@ -1275,7 +1275,7 @@
 			
 			.main > .content.style1
 			{
-				background:	url('images/bgtr.svg') top right no-repeat,
+				background: url('images/bgtr.svg') top right no-repeat,
 							url('images/bgbl.svg') bottom left no-repeat,
 							url('images/bgbl.svg') bottom left no-repeat,
 							url('images/overlay.png'),
@@ -1284,7 +1284,7 @@
 
 			.main > .content.style2
 			{
-				background:	url('images/bgtr.svg') top right no-repeat,
+				background: url('images/bgtr.svg') top right no-repeat,
 							url('images/bgbl.svg') bottom left no-repeat,
 							url('images/overlay.png'),
 							linear-gradient(45deg, #384955, #655361, #85505f);
@@ -1292,7 +1292,7 @@
 
 			.main > .content.style3
 			{
-				background:	url('images/bgtr.svg') top right no-repeat,
+				background: url('images/bgtr.svg') top right no-repeat,
 							url('images/bgbl.svg') bottom left no-repeat,
 							url('images/overlay.png'),
 							linear-gradient(45deg, #5f796b, #3a4e59, #2f394e);
@@ -1331,7 +1331,7 @@
 			
 		#footer ul.icons
 		{
-		}	
+		}   
 		
 			#footer ul.icons li
 			{
@@ -1343,36 +1343,17 @@
 				}
 
 @media (min-width: 801px) and (max-width: 1366px){
-  #header {
-    background: url('../images/snunei/snunei-main_1366.png') no-repeat;
-	paddding: 4em 0 4em 0;
-  }
   #title_br{
 		line-height: 100%;
 	}
 }
 @media (max-width: 800px) and (min-width: 641px){
-  #header {
-    background: url('../images/snunei/snunei-main_800.png')  no-repeat;
-	padding-top: 4em;
-	padding-bottom: 2em;
-	min-height: 533px;
-  }
   #gallery embed{
 	width:640px;
 	height: 480px;
   }
 }
 @media (max-width: 640px){
-  #header {
-    background: url('../images/snunei/snunei-main_640.png') no-repeat;
-	padding-top: 2em;
-	padding-bottom: 2em;
-	min-height: 427px;
-  }
-  #header header h1{
-	font-size: 1.5em;
-  }
   #gallery embed{
 	display: none;
   }
