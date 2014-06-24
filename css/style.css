@@ -142,7 +142,8 @@
 	
 	p
 	{
-		text-align: left; /*justify;*/
+		text-align: justify; /*left;*/
+		text-indent: 20px;
 	}
 
 	header
@@ -184,7 +185,8 @@
 	
 		.featured p
 		{
-			text-align: center;
+			text-align: justify; /*center*/
+			text-indent: 20px;
 		}
 
 	/* Sections/Articles */
