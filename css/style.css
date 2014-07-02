@@ -143,7 +143,7 @@
 	p
 	{
 		text-align: justify; /*left;*/
-		text-indent: 20px;
+		text-indent: 25px;
 	}
 
 	header
@@ -186,7 +186,7 @@
 		.featured p
 		{
 			text-align: justify; /*center*/
-			text-indent: 20px;
+			text-indent: 25px;
 		}
 
 	/* Sections/Articles */
