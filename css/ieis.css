@@ -12,29 +12,28 @@
 }
 /* ------------------------------------------------------------------*/
 .spec-ib:hover .button{
-	background: #0F960F;
+	background: #EE5959;
 }
 .spec-ib:hover .fa:before{
-	color: #0F960F;
+	color: #EE5959;
 }
-.spec-ib:hover .feature-icon:after, .spec-eco:hover .feature-icon:before{
-	background: #0F960F;
+.spec-ib:hover .feature-icon:after, .spec-ib:hover .feature-icon:before{
+	background: #EE5959;
 }
 .spec-ib:hover .fa{
-	box-shadow: inset 0 0 0 1px #0F960F;
+	box-shadow: inset 0 0 0 1px #EE5959;
 }
 /* ------------------------------------------------------------------*/
 .spec-eco:hover .button{
-	background: #EE5959;
+	background: #0F960F;
 }
 .spec-eco:hover .fa:before{
-	color: #EE5959;
+	color: #0F960F;
 }
-.spec-eco:hover .feature-icon:after, .spec-ib:hover .feature-icon:before{
-	background: #EE5959;
+.spec-eco:hover .feature-icon:after, .spec-eco:hover .feature-icon:before{
+	background: #0F960F;
 }
 .spec-eco:hover .fa{
-	box-shadow: inset 0 0 0 1px #EE5959;
+	box-shadow: inset 0 0 0 1px #0F960F;
 }
-
 /* ------------------------------------------------------------------*/
