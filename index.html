@@ -412,6 +412,7 @@
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
+var yaParams = {ip_adress: "<? echo $_SERVER['REMOTE_ADDR'];?>"};
 (function (d, w, c) {
     (w[c] = w[c] || []).push(function() {
         try {
@@ -419,7 +420,9 @@
                     webvisor:true,
                     clickmap:true,
                     trackLinks:true,
-                    accurateTrackBounce:true});
+                    accurateTrackBounce:true,
+                    params:window.yaParams
+            });
         } catch(e) { }
     });
 
