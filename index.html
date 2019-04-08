@@ -122,9 +122,51 @@ E-mail: alex7y88@gmail.com  <br />
 		а город порадует будущих студентов уникальными памятниками истории и архитектуры. Преподавательский состав постоянно совершенствует 
 		методики преподавания и обучает наиболее актуальным и современным вопросам в области информационной безопасности. 
 		Мы рады увидеть Вас в рядах наших студентов.</p>
-		
-		<div>
-                        </div>
+	<!-- Gallery -->	
+<div id="gallery">
+</div>
+<script type="text/javascript">
+    document.querySelector('#gallery').appendChild(JGallery.create([{
+        title: 'Images',
+        items: [
+            {
+                url: 'images/large/1.jpg',
+                thumbUrl: 'images/thumbs/1.jpg',
+                title: 'Photo1',
+                hash: 'photo-1'
+            },
+            {
+                url: 'images/large/2.jpg',
+                thumbUrl: 'images/thumbs/2.jpg',
+                title: 'Photo2',
+                hash: 'photo-2'
+            },
+            {
+                url: 'images/large/3.jpg',
+                thumbUrl: 'images/thumbs/3.jpg',
+                title: 'Photo3',
+                hash: 'photo-3'
+            }
+        ]
+    }, {
+        title: 'HTML',
+        items: [
+            {
+                element: JGallery.createElement('<video src="SampleVideo_1280x720_1mb.mp4" loop autoplay/>'),
+                thumbElement: JGallery.createElement('<span>Video</span>'),
+                title: 'Video',
+                hash: 'video'
+            },
+            {
+                element: JGallery.createElement('<span style="font-size: 10vmax">Any HTML content</span>'),
+                thumbElement: JGallery.createElement('<span>HTML</span>'),
+                title: 'HTML',
+                hash: 'html'
+            }
+        ]
+    }]).getElement());
+</script>
+	<!-- end Gallery -->
 	<!-- Start Section Divider -->
 	<div class="section divider">
 		<h2>О специальности</h2>
